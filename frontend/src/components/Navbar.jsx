@@ -33,9 +33,11 @@ const Navbar = () => {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-2">
-            <div className="bg-blue-600 text-white px-3 py-2 rounded-lg font-bold text-xl">
-              ST
-            </div>
+            <img 
+              src="/logo.png" 
+              alt="SkillTwin Logo" 
+              className="h-10 w-auto"
+            />
             <span className="font-bold text-xl text-gray-900">SkillTwin</span>
           </Link>
 

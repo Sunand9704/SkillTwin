@@ -1,4 +1,3 @@
-
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { Mail, Phone, MapPin, MessageCircle, Send } from 'lucide-react';
@@ -11,9 +10,11 @@ const Footer = () => {
           {/* Company Info */}
           <div className="space-y-4">
             <div className="flex items-center space-x-2">
-              <div className="bg-blue-600 text-white px-3 py-2 rounded-lg font-bold text-xl">
-                ST
-              </div>
+              <img 
+                src="/logo.png" 
+                alt="SkillTwin Logo" 
+                className="h-8 w-auto"
+              />
               <span className="font-bold text-xl">SkillTwin</span>
             </div>
             <p className="text-gray-300 text-sm">

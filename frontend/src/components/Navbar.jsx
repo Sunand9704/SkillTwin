@@ -49,8 +49,8 @@ const Navbar = () => {
                 to={item.path}
                 className={`px-3 py-2 rounded-md text-sm font-medium transition-colors ${
                   isActive(item.path)
-                    ? "text-blue-400 bg-blue-50"
-                    : "text-gray-700 hover:text-blue-400 hover:bg-gray-50"
+                    ? "text-blue-300 bg-blue-50"
+                    : "text-gray-700 hover:text-blue-300 hover:bg-gray-50"
                 }`}
               >
                 {item.name}
@@ -96,8 +96,8 @@ const Navbar = () => {
                       onClick={() => setIsOpen(false)}
                       className={`px-3 py-2 rounded-md text-sm font-medium transition-colors ${
                         isActive(item.path)
-                          ? "text-blue-400 bg-blue-50"
-                          : "text-gray-700 hover:text-blue-400 hover:bg-gray-50"
+                          ? "text-blue-300 bg-blue-50"
+                          : "text-gray-700 hover:text-blue-300 hover:bg-gray-50"
                       }`}
                     >
                       {item.name}

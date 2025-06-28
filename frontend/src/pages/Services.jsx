@@ -39,12 +39,12 @@ const Services = () => {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-blue-400 to-indigo-600 text-white py-16">
+      <section className="bg-gradient-to-br from-blue-100 to-blue-300 text-gray-900 py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
-            <h1 className="text-4xl md:text-5xl font-bold mb-6">Our Services</h1>
-            <p className="text-xl text-blue-100 max-w-3xl mx-auto">
-              Comprehensive support services designed to accelerate your tech career and help you achieve your professional goals.
+            <h1 className="text-4xl md:text-5xl font-bold text-black mb-4">Our Services</h1>
+            <p className="text-xl text-gray-700 max-w-2xl mx-auto">
+              Explore our range of services designed to help you succeed in your tech career.
             </p>
           </div>
         </div>
@@ -64,7 +64,7 @@ const Services = () => {
                         <Icon className="h-6 w-6 text-blue-400" />
                       </div>
                       <div>
-                        <CardTitle className="text-2xl">{service.title}</CardTitle>
+                        <CardTitle className="text-xl text-blue-700 font-semibold">{service.title}</CardTitle>
                         <Badge variant="outline" className="mt-1">{service.pricing}</Badge>
                       </div>
                     </div>
@@ -106,7 +106,7 @@ const Services = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {processSteps.map((step, index) => (
               <div key={index} className="text-center">
-                <div className="bg-blue-400 text-white w-12 h-12 rounded-full flex items-center justify-center text-xl font-bold mx-auto mb-4">
+                <div className="bg-blue-300 text-white w-12 h-12 rounded-full flex items-center justify-center text-xl font-bold mx-auto mb-4">
                   {step.step}
                 </div>
                 <h3 className="text-lg font-semibold mb-3">{step.title}</h3>
@@ -246,19 +246,17 @@ const Services = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 bg-blue-400 text-white">
+      <section className="py-16 bg-white text-gray-900">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            Ready to Transform Your Career?
-          </h2>
-          <p className="text-xl text-blue-100 mb-8">
-            Choose the service that best fits your needs and start your journey to success today.
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-black">Ready to Get Started?</h2>
+          <p className="text-xl text-gray-700 mb-8">
+            Contact us today to learn more about how we can help you achieve your career goals.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" className="bg-yellow-500 hover:bg-yellow-600 text-black font-semibold" asChild>
+            <Button size="lg" className="bg-green-600 hover:bg-green-700 text-white font-bold" asChild>
               <Link to="/contact">Get Started Now</Link>
             </Button>
-            <Button size="lg" variant="outline" className="border-white text-white hover:bg-white text-blue-400" asChild>
+            <Button size="lg" variant="outline" className="bg-white text-blue-700 border-blue-700 hover:bg-blue-50 font-bold" asChild>
               <Link to="/trainings">View Training Programs</Link>
             </Button>
           </div>

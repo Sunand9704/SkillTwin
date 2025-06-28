@@ -58,12 +58,12 @@ const Contact = () => {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-blue-400 to-indigo-600 text-white py-16">
+      <section className="bg-gradient-to-br from-blue-100 to-blue-300 text-gray-900 py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
-            <h1 className="text-4xl md:text-5xl font-bold mb-6">Contact Us</h1>
-            <p className="text-xl text-blue-100 max-w-3xl mx-auto">
-              Ready to accelerate your tech career? Get in touch with our expert team today.
+            <h1 className="text-4xl md:text-5xl font-bold text-black mb-4">Contact Us</h1>
+            <p className="text-xl text-gray-700 max-w-2xl mx-auto">
+              We're here to help you succeed in your tech career. Reach out to us for support, training, or guidance.
             </p>
           </div>
         </div>
@@ -73,8 +73,8 @@ const Contact = () => {
       <section className="py-16 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">Get Instant Support</h2>
-            <p className="text-xl text-gray-600">
+            <h2 className="text-3xl font-bold text-black mb-4">Get Instant Support</h2>
+            <p className="text-xl text-gray-700">
               Choose your preferred way to reach us
             </p>
           </div>
@@ -91,7 +91,7 @@ const Contact = () => {
                   Get instant responses to your queries. Available 24/7 for urgent support.
                 </p>
                 <Button 
-                  className="w-full bg-green-600 hover:bg-green-700"
+                  className="w-full bg-green-600 hover:bg-green-700 text-white font-bold"
                   asChild
                 >
                   <a href="https://wa.me/1234567890" target="_blank" rel="noopener noreferrer">
@@ -105,7 +105,7 @@ const Contact = () => {
             <Card className="text-center hover:shadow-lg transition-shadow hover:shadow-2xl transition-shadow hover:scale-105 transition-transform durtion-300 ease-in-out cursor-pointer border-black">
               <CardHeader>
                 <div className="mx-auto bg-blue-100 p-4 rounded-full w-16 h-16 flex items-center justify-center mb-4">
-                  <Send className="h-8 w-8 text-blue-400" />
+                  <Send className="h-8 w-8 text-blue-300" />
                 </div>
                 <CardTitle className="text-xl">Telegram Support</CardTitle>
               </CardHeader>
@@ -114,7 +114,7 @@ const Contact = () => {
                   Join our Telegram channel for updates and quick support from our team.
                 </p>
                 <Button 
-                  className="w-full bg-blue-400 hover:bg-blue-500"
+                  className="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold"
                   asChild
                 >
                   <a href="https://t.me/skilltwin" target="_blank" rel="noopener noreferrer">
@@ -136,7 +136,7 @@ const Contact = () => {
             <div>
               <Card>
                 <CardHeader>
-                  <CardTitle className="text-2xl">Send Us a Message</CardTitle>
+                  <CardTitle className="text-2xl text-blue-700 font-semibold">Send Us a Message</CardTitle>
                 </CardHeader>
                 <CardContent>
                   <form onSubmit={(e) => {
@@ -203,7 +203,7 @@ const Contact = () => {
                         rows={6}
                         value={values.message}
                         onChange={(e) => handleChange('message', e.target.value)}
-                        className={`w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400 ${errors.message ? 'border-red-500' : 'border-gray-300'}`}
+                        className={`w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-300 ${errors.message ? 'border-red-500' : 'border-gray-300'}`}
                         placeholder="Tell us how we can help you..."
                       />
                       {errors.message && <p className="text-red-500 text-sm">{errors.message}</p>}
@@ -211,7 +211,7 @@ const Contact = () => {
 
                     <Button 
                       type="submit" 
-                      className="w-full" 
+                      className="w-full bg-green-600 hover:bg-green-700 text-white font-bold" 
                       disabled={isSubmitting}
                       size="lg"
                     >
@@ -225,8 +225,8 @@ const Contact = () => {
             {/* Contact Information */}
             <div className="space-y-8">
               <div>
-                <h2 className="text-3xl font-bold text-gray-900 mb-6">Get in Touch</h2>
-                <p className="text-gray-600 text-lg leading-relaxed">
+                <h2 className="text-3xl font-bold text-black mb-6">Get in Touch</h2>
+                <p className="text-gray-700 text-lg leading-relaxed">
                   We're here to help you succeed in your tech career. Whether you need job support, 
                   training, or guidance, our expert team is ready to assist you every step of the way.
                 </p>
@@ -235,45 +235,45 @@ const Contact = () => {
               <div className="space-y-6">
                 <div className="flex items-start space-x-4">
                   <div className="bg-blue-100 p-3 rounded-lg">
-                    <Mail className="h-6 w-6 text-blue-400" />
+                    <Mail className="h-6 w-6 text-blue-600" />
                   </div>
                   <div>
-                    <h3 className="font-semibold text-lg mb-1">Email Support</h3>
-                    <p className="text-gray-600">contact@skilltwin.com</p>
+                    <h3 className="font-semibold text-lg mb-1 text-blue-700">Email Support</h3>
+                    <p className="text-gray-700">contact@skilltwin.com</p>
                     <p className="text-sm text-gray-500">We respond within 24 hours</p>
                   </div>
                 </div>
 
                 <div className="flex items-start space-x-4">
                   <div className="bg-blue-100 p-3 rounded-lg">
-                    <Phone className="h-6 w-6 text-blue-400" />
+                    <Phone className="h-6 w-6 text-blue-600" />
                   </div>
                   <div>
-                    <h3 className="font-semibold text-lg mb-1">Phone Support</h3>
-                    <p className="text-gray-600">+1 (555) 123-4567</p>
+                    <h3 className="font-semibold text-lg mb-1 text-blue-700">Phone Support</h3>
+                    <p className="text-gray-700">+1 (555) 123-4567</p>
                     <p className="text-sm text-gray-500">Mon-Fri: 9 AM - 6 PM EST</p>
                   </div>
                 </div>
 
                 <div className="flex items-start space-x-4">
                   <div className="bg-blue-100 p-3 rounded-lg">
-                    <Clock className="h-6 w-6 text-blue-400" />
+                    <Clock className="h-6 w-6 text-blue-600" />
                   </div>
                   <div>
-                    <h3 className="font-semibold text-lg mb-1">Business Hours</h3>
-                    <p className="text-gray-600">Monday - Friday: 9:00 AM - 6:00 PM</p>
-                    <p className="text-gray-600">Saturday: 10:00 AM - 4:00 PM</p>
-                    <p className="text-gray-600">Sunday: Closed</p>
+                    <h3 className="font-semibold text-lg mb-1 text-blue-700">Business Hours</h3>
+                    <p className="text-gray-700">Monday - Friday: 9:00 AM - 6:00 PM</p>
+                    <p className="text-gray-700">Saturday: 10:00 AM - 4:00 PM</p>
+                    <p className="text-gray-700">Sunday: Closed</p>
                   </div>
                 </div>
 
                 <div className="flex items-start space-x-4">
                   <div className="bg-blue-100 p-3 rounded-lg">
-                    <MapPin className="h-6 w-6 text-blue-400" />
+                    <MapPin className="h-6 w-6 text-blue-600" />
                   </div>
                   <div>
-                    <h3 className="font-semibold text-lg mb-1">Service Area</h3>
-                    <p className="text-gray-600">Remote Support Available Worldwide</p>
+                    <h3 className="font-semibold text-lg mb-1 text-blue-700">Service Area</h3>
+                    <p className="text-gray-700">Remote Support Available Worldwide</p>
                     <p className="text-sm text-gray-500">Supporting professionals globally</p>
                   </div>
                 </div>
@@ -286,8 +286,8 @@ const Contact = () => {
                   <p className="text-gray-600 mb-4">
                     Check out our frequently asked questions for quick answers to common inquiries.
                   </p>
-                  <Button variant="outline" className="w-full">
-                    View FAQ Section
+                  <Button variant="outline" className="w-full bg-white text-blue-700 border-blue-700 hover:bg-blue-50 font-bold">
+                    View FAQ
                   </Button>
                 </CardContent>
               </Card>
@@ -296,15 +296,12 @@ const Contact = () => {
         </div>
       </section>
 
-      {/* Response Time Banner */}
-      <section className="py-12 bg-blue-400 text-white">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-2xl font-bold mb-4">We're Here to Help!</h2>
-          <p className="text-lg text-blue-100">
-            Our average response time is under 2 hours during business hours. 
-            For urgent matters, reach out via WhatsApp for immediate assistance.
-          </p>
-        </div>
+      {/* Info Banner */}
+      <section className="py-12 bg-blue-100 text-center">
+        <h2 className="text-2xl md:text-3xl font-bold text-blue-700 mb-2">We're Here to Help!</h2>
+        <p className="text-lg text-gray-700 max-w-2xl mx-auto">
+          Our average response time is under 2 hours during business hours. For urgent matters, reach out via WhatsApp for immediate assistance.
+        </p>
       </section>
     </div>
   );

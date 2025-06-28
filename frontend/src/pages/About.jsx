@@ -35,13 +35,12 @@ const About = () => {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-blue-400 to-indigo-600 text-white py-16">
+      <section className="bg-gradient-to-br from-blue-100 to-blue-300 text-gray-900 py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
-            <h1 className="text-4xl md:text-5xl font-bold mb-6">About SkillTwin</h1>
-            <p className="text-xl text-blue-100 max-w-3xl mx-auto">
-              We are dedicated to empowering tech professionals through expert guidance, 
-              comprehensive training, and personalized support to help you achieve your career goals.
+            <h1 className="text-4xl md:text-5xl font-bold text-black mb-4">About SkillTwin</h1>
+            <p className="text-xl text-gray-700 max-w-2xl mx-auto">
+              Empowering careers through expert job support, training programs, and personalized mentorship.
             </p>
           </div>
         </div>
@@ -53,8 +52,8 @@ const About = () => {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             {stats.map((stat, index) => (
               <div key={index} className="text-center">
-                <div className="text-4xl font-bold text-blue-400 mb-2">{stat.number}</div>
-                <div className="text-gray-600">{stat.label}</div>
+                <div className="text-4xl font-bold text-blue-700 mb-2">{stat.number}</div>
+                <div className="text-gray-700">{stat.label}</div>
               </div>
             ))}
           </div>
@@ -102,13 +101,13 @@ const About = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
             <Card className="border-black text-center hover:shadow-2xl transition-shadow hover:scale-105 transition-transform duration-300 ease-in-out cursor-pointer">
               <CardHeader>
-                <CardTitle className="text-2xl flex items-center">
+                <CardTitle className="text-2xl flex items-center text-blue-700 font-semibold">
                   <Target className="h-6 w-6 mr-3 text-blue-400" />
                   Our Mission
                 </CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-gray-600 leading-relaxed">
+                <p className="text-gray-700 leading-relaxed">
                   To empower tech professionals with the knowledge, skills, and support they need 
                   to achieve their career goals. We provide personalized guidance, comprehensive 
                   training, and ongoing mentorship to help individuals navigate the competitive 
@@ -119,13 +118,13 @@ const About = () => {
 
             <Card className="border-black text-center hover:shadow-2xl transition-shadow hover:scale-105 transition-transform duration-300 ease-in-out cursor-pointer">
               <CardHeader>
-                <CardTitle className="text-2xl flex items-center">
+                <CardTitle className="text-2xl flex items-center text-blue-700 font-semibold">
                   <Heart className="h-6 w-6 mr-3 text-blue-400" />
                   Our Vision
                 </CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-gray-600 leading-relaxed">
+                <p className="text-gray-700 leading-relaxed">
                   To be the leading platform that transforms careers and lives in the tech industry. 
                   We envision a world where every talented individual has access to the resources 
                   and support needed to reach their full potential, regardless of their background 
@@ -155,10 +154,10 @@ const About = () => {
                     <div className="mx-auto bg-blue-100 p-3 rounded-full w-16 h-16 flex items-center justify-center mb-4">
                       <Icon className="h-8 w-8 text-blue-400" />
                     </div>
-                    <CardTitle className="text-xl">{value.title}</CardTitle>
+                    <CardTitle className="text-xl text-blue-700 font-semibold">{value.title}</CardTitle>
                   </CardHeader>
                   <CardContent>
-                    <p className="text-gray-600">{value.description}</p>
+                    <p className="text-gray-700">{value.description}</p>
                   </CardContent>
                 </Card>
               );
@@ -168,30 +167,33 @@ const About = () => {
       </section>
 
       {/* Founder's Note */}
-      <section className="py-16 bg-blue-400 text-white">
+      <section className="py-16 bg-white text-gray-900">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
-            <h2 className="text-3xl md:text-4xl font-bold mb-8">A Note from Our Founder</h2>
-            <div className="bg-white/10 rounded-lg p-8">
-              <blockquote className="text-lg leading-relaxed mb-6">
-                "Having worked in the tech industry for over a decade, I've witnessed firsthand 
-                the challenges that talented professionals face in advancing their careers. 
-                SkillTwin was born from my passion to democratize access to expert guidance 
-                and create a supportive community where everyone can thrive.
-                <br /><br />
-                Our success is measured not just by the number of placements we've facilitated, 
-                but by the lives we've transformed and the confidence we've instilled in our clients. 
-                Every success story motivates us to continue pushing boundaries and setting new 
-                standards in career development."
-              </blockquote>
-              <div className="flex items-center justify-center space-x-4">
-                <div className="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center">
-                  <Users className="h-8 w-8" />
-                </div>
-                <div className="text-left">
-                  <div className="font-semibold text-lg">John Smith</div>
-                  <div className="text-blue-200">Founder & CEO</div>
-                </div>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-black">Founder's Note</h2>
+            <p className="text-xl text-gray-700 mb-8">
+              Our mission is to help you succeed in your tech career journey.
+            </p>
+          </div>
+          <div className="bg-white/10 rounded-lg p-8">
+            <blockquote className="text-lg leading-relaxed mb-6">
+              "Having worked in the tech industry for over a decade, I've witnessed firsthand 
+              the challenges that talented professionals face in advancing their careers. 
+              SkillTwin was born from my passion to democratize access to expert guidance 
+              and create a supportive community where everyone can thrive.
+              <br /><br />
+              Our success is measured not just by the number of placements we've facilitated, 
+              but by the lives we've transformed and the confidence we've instilled in our clients. 
+              Every success story motivates us to continue pushing boundaries and setting new 
+              standards in career development."
+            </blockquote>
+            <div className="flex items-center justify-center space-x-4">
+              <div className="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center">
+                <Users className="h-8 w-8" />
+              </div>
+              <div className="text-left">
+                <div className="font-semibold text-lg">John Smith</div>
+                <div className="text-blue-200">Founder & CEO</div>
               </div>
             </div>
           </div>
@@ -209,22 +211,22 @@ const About = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="text-center">
               <Clock className="h-12 w-12 text-blue-400 mx-auto mb-4" />
-              <h3 className="text-xl font-semibold mb-3">24/7 Support</h3>
-              <p className="text-gray-600">
+              <h3 className="text-xl font-semibold mb-3 text-blue-700">24/7 Support</h3>
+              <p className="text-gray-700">
                 Our team is available around the clock to provide assistance when you need it most.
               </p>
             </div>
             <div className="text-center">
               <Shield className="h-12 w-12 text-blue-400 mx-auto mb-4" />
-              <h3 className="text-xl font-semibold mb-3">Proven Track Record</h3>
-              <p className="text-gray-600">
+              <h3 className="text-xl font-semibold mb-3 text-blue-700">Proven Track Record</h3>
+              <p className="text-gray-700">
                 With hundreds of successful placements, our methods are tested and proven effective.
               </p>
             </div>
             <div className="text-center">
               <Users className="h-12 w-12 text-blue-400 mx-auto mb-4" />
-              <h3 className="text-xl font-semibold mb-3">Expert Team</h3>
-              <p className="text-gray-600">
+              <h3 className="text-xl font-semibold mb-3 text-blue-700">Expert Team</h3>
+              <p className="text-gray-700">
                 Our mentors are industry veterans with decades of combined experience.
               </p>
             </div>

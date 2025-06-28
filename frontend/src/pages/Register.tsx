@@ -106,29 +106,30 @@ const Register = () => {
   const getPasswordStrength = (password: string) => {
     if (password.length === 0)
       return { strength: 0, color: "bg-gray-200", text: "" };
-    if (password.length < 6)
-      return { strength: 1, color: "bg-red-500", text: "Weak" };
-    if (password.length < 8)
-      return { strength: 2, color: "bg-yellow-500", text: "Fair" };
-    if (password.length < 10)
-      return { strength: 3, color: "bg-blue-500", text: "Good" };
-    return { strength: 4, color: "bg-green-500", text: "Strong" };
+    const score = password.length / 10;
+    if (score <= 1) {
+      return { strength: 1, color: "bg-red-400", text: "Weak" };
+    } else if (score <= 2) {
+      return { strength: 2, color: "bg-yellow-400", text: "Fair" };
+    } else if (score <= 3) {
+      return { strength: 3, color: "bg-blue-300", text: "Good" };
+    } else {
+      return { strength: 4, color: "bg-green-400", text: "Strong" };
+    }
   };
 
   const passwordStrength = getPasswordStrength(formData.password);
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-green-50 via-white to-blue-50 p-4">
+    <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-blue-100 to-blue-300">
       <Card className="w-full max-w-md shadow-xl border-0">
         <CardHeader className="space-y-1 text-center">
-          <div className="mx-auto w-12 h-12 bg-gradient-to-br from-green-500 to-blue-400 rounded-full flex items-center justify-center mb-4">
-            <User className="w-6 h-6 text-white" />
+          <div className="mx-auto w-12 h-12 bg-gradient-to-br from-blue-100 to-blue-300 rounded-full flex items-center justify-center mb-4">
+            <User className="w-6 h-6 text-blue-700" />
           </div>
-          <CardTitle className="text-2xl font-bold bg-gradient-to-r from-green-600 to-blue-400 bg-clip-text text-transparent">
-            Create Account
-          </CardTitle>
-          <CardDescription className="text-gray-600">
-            Join SkillTwin and start your journey
+          <CardTitle className="text-2xl font-bold text-black">Create Account</CardTitle>
+          <CardDescription className="text-gray-700">
+            Register for a SkillTwin account
           </CardDescription>
         </CardHeader>
 
@@ -297,14 +298,14 @@ const Register = () => {
                 I agree to the{" "}
                 <Link
                   to="/terms"
-                  className="text-blue-400 hover:text-blue-600 underline"
+                  className="text-blue-300 hover:text-blue-500 underline"
                 >
                   Terms of Service
                 </Link>{" "}
                 and{" "}
                 <Link
                   to="/privacy"
-                  className="text-blue-400 hover:text-blue-600 underline"
+                  className="text-blue-300 hover:text-blue-500 underline"
                 >
                   Privacy Policy
                 </Link>
@@ -313,20 +314,10 @@ const Register = () => {
 
             <Button
               type="submit"
-              className="w-full bg-gradient-to-r from-green-600 to-blue-400 hover:from-green-700 hover:to-blue-500 text-white font-medium py-2 px-4 rounded-lg transition-all duration-200 shadow-md hover:shadow-lg transform hover:scale-105"
+              className="w-full bg-green-600 hover:bg-green-700 text-white font-bold"
               disabled={loading}
             >
-              {loading ? (
-                <div className="flex items-center justify-center">
-                  <div className="animate-spin rounded-full h-4 w-4 border-b-2 border-white mr-2"></div>
-                  Creating account...
-                </div>
-              ) : (
-                <div className="flex items-center justify-center">
-                  Create Account
-                  <ArrowRight className="ml-2 h-4 w-4" />
-                </div>
-              )}
+              {loading ? 'Creating account...' : 'Sign Up'}
             </Button>
           </form>
 
@@ -335,7 +326,7 @@ const Register = () => {
               Already have an account?{" "}
               <Link
                 to="/login"
-                className="text-blue-400 hover:text-blue-600 font-medium underline"
+                className="text-blue-700 hover:text-blue-900 font-bold underline"
               >
                 Sign in here
               </Link>

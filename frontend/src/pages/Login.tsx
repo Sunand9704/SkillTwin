@@ -62,16 +62,14 @@ const Login = () => {
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-blue-50 via-white to-purple-50 p-4">
+    <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-blue-100 to-blue-300">
       <Card className="w-full max-w-md shadow-xl border-0">
         <CardHeader className="space-y-1 text-center">
-          <div className="mx-auto w-12 h-12 bg-gradient-to-br from-blue-400 to-purple-600 rounded-full flex items-center justify-center mb-4">
-            <Mail className="w-6 h-6 text-white" />
+          <div className="mx-auto w-12 h-12 bg-gradient-to-br from-blue-100 to-blue-300 rounded-full flex items-center justify-center mb-4">
+            <Mail className="w-6 h-6 text-blue-700" />
           </div>
-          <CardTitle className="text-2xl font-bold bg-gradient-to-r from-blue-400 to-purple-600 bg-clip-text text-transparent">
-            Welcome Back
-          </CardTitle>
-          <CardDescription className="text-gray-600">
+          <CardTitle className="text-2xl font-bold text-black">Welcome Back</CardTitle>
+          <CardDescription className="text-gray-700">
             Sign in to your SkillTwin account
           </CardDescription>
         </CardHeader>
@@ -140,7 +138,7 @@ const Login = () => {
                 <input
                   type="checkbox"
                   id="remember"
-                  className="rounded border-gray-300 text-blue-400 focus:ring-blue-400"
+                  className="rounded border-gray-300 text-blue-300 focus:ring-blue-300"
                 />
                 <Label htmlFor="remember" className="text-sm text-gray-600">
                   Remember me
@@ -148,7 +146,7 @@ const Login = () => {
               </div>
               <Link
                 to="/forgot-password"
-                className="text-sm text-blue-400 hover:text-blue-600 underline"
+                className="text-sm text-blue-300 hover:text-blue-500 underline"
               >
                 Forgot password?
               </Link>
@@ -156,20 +154,10 @@ const Login = () => {
 
             <Button
               type="submit"
-              className="w-full bg-gradient-to-r from-blue-400 to-purple-600 hover:from-blue-500 hover:to-purple-700 text-white font-medium py-2 px-4 rounded-lg transition-all duration-200 shadow-md hover:shadow-lg transform hover:scale-105"
+              className="w-full bg-green-600 hover:bg-green-700 text-white font-bold"
               disabled={loading}
             >
-              {loading ? (
-                <div className="flex items-center justify-center">
-                  <div className="animate-spin rounded-full h-4 w-4 border-b-2 border-white mr-2"></div>
-                  Signing in...
-                </div>
-              ) : (
-                <div className="flex items-center justify-center">
-                  Sign In
-                  <ArrowRight className="ml-2 h-4 w-4" />
-                </div>
-              )}
+              {loading ? 'Signing in...' : 'Sign In'}
             </Button>
           </form>
 
@@ -178,7 +166,7 @@ const Login = () => {
               Don't have an account?{" "}
               <Link
                 to="/register"
-                className="text-blue-400 hover:text-blue-600 font-medium underline"
+                className="text-blue-700 hover:text-blue-900 font-bold underline"
               >
                 Sign up here
               </Link>

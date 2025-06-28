@@ -19,12 +19,12 @@ const Trainings = () => {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-blue-400 to-indigo-600 text-white py-16">
+      <section className="bg-gradient-to-br from-blue-100 to-blue-300 text-gray-900 py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
-            <h1 className="text-4xl md:text-5xl font-bold mb-6">Training Programs</h1>
-            <p className="text-xl text-blue-100 max-w-3xl mx-auto">
-              Comprehensive, industry-focused training programs designed to accelerate your career in technology.
+            <h1 className="text-4xl md:text-5xl font-bold text-black mb-4">Our Training Programs</h1>
+            <p className="text-xl text-gray-700 max-w-2xl mx-auto">
+              Explore our comprehensive training programs designed by industry experts.
             </p>
           </div>
         </div>
@@ -73,13 +73,13 @@ const Trainings = () => {
                       {program.level}
                     </Badge>
                     <div className="text-right">
-                      <div className="text-2xl font-bold text-blue-400">{program.price}</div>
+                      <span className="font-bold text-blue-700 text-lg">
+                        {program.price}
+                      </span>
                     </div>
                   </div>
-                  <CardTitle className="text-xl mb-2">{program.title}</CardTitle>
-                  <CardDescription className="text-sm leading-relaxed">
-                    {program.description}
-                  </CardDescription>
+                  <CardTitle className="text-xl text-blue-700 font-semibold">{program.title}</CardTitle>
+                  <CardDescription className="text-gray-700">{program.description}</CardDescription>
                 </CardHeader>
                 <CardContent className="pt-0">
                   <div className="space-y-3 mb-4">
@@ -97,14 +97,14 @@ const Trainings = () => {
                     <h4 className="font-semibold text-sm mb-2">Technologies:</h4>
                     <div className="flex flex-wrap gap-1">
                       {program.technologies.map((tech, index) => (
-                        <Badge key={index} variant="outline" className="text-xs">
+                        <Badge key={index} variant="outline" className="text-xs text-blue-700 border-blue-200 bg-blue-50">
                           {tech}
                         </Badge>
                       ))}
                     </div>
                   </div>
 
-                  <Button asChild className="w-full">
+                  <Button asChild className="w-full bg-green-600 hover:bg-green-700 text-white font-bold">
                     <Link to={`/trainings/${program.id}`}>
                       View Details <ArrowRight className="ml-2 h-4 w-4" />
                     </Link>
@@ -127,7 +127,7 @@ const Trainings = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="text-center">
               <div className="bg-blue-100 p-4 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
-                <Users className="h-8 w-8 text-blue-400" />
+                <Users className="h-8 w-8 text-blue-300" />
               </div>
               <h3 className="text-xl font-semibold mb-3">Expert Instructors</h3>
               <p className="text-gray-600">
@@ -136,7 +136,7 @@ const Trainings = () => {
             </div>
             <div className="text-center">
               <div className="bg-blue-100 p-4 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
-                <Star className="h-8 w-8 text-blue-400" />
+                <Star className="h-8 w-8 text-blue-300" />
               </div>
               <h3 className="text-xl font-semibold mb-3">Hands-on Projects</h3>
               <p className="text-gray-600">
@@ -145,7 +145,7 @@ const Trainings = () => {
             </div>
             <div className="text-center">
               <div className="bg-blue-100 p-4 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
-                <Clock className="h-8 w-8 text-blue-400" />
+                <Clock className="h-8 w-8 text-blue-300" />
               </div>
               <h3 className="text-xl font-semibold mb-3">Flexible Schedule</h3>
               <p className="text-gray-600">
@@ -192,7 +192,7 @@ const Trainings = () => {
                 <CardContent className="pt-6">
                   <div className="flex items-center mb-4">
                     <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mr-3">
-                      <Users className="h-6 w-6 text-blue-400" />
+                      <Users className="h-6 w-6 text-blue-300" />
                     </div>
                     <div>
                       <div className="font-semibold">{story.name}</div>
@@ -209,19 +209,17 @@ const Trainings = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 bg-blue-400 text-white">
+      <section className="py-16 bg-white text-gray-900">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            Ready to Start Your Learning Journey?
-          </h2>
-          <p className="text-xl text-blue-100 mb-8">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-black">Ready to Start Your Learning Journey?</h2>
+          <p className="text-xl text-gray-700 mb-8">
             Join thousands of professionals who have transformed their careers with our training programs.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" className="bg-yellow-500 hover:bg-yellow-600 text-black font-semibold">
+            <Button size="lg" className="bg-green-600 hover:bg-green-700 text-white font-bold">
               Enroll Now
             </Button>
-            <Button size="lg" variant="outline" className="border-white text-white hover:bg-white text-blue-400">
+            <Button size="lg" variant="outline" className="bg-white text-blue-700 border-blue-700 hover:bg-blue-50 font-bold">
               Schedule a Call
             </Button>
           </div>

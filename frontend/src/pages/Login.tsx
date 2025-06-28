@@ -65,10 +65,10 @@ const Login = () => {
     <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-blue-50 via-white to-purple-50 p-4">
       <Card className="w-full max-w-md shadow-xl border-0">
         <CardHeader className="space-y-1 text-center">
-          <div className="mx-auto w-12 h-12 bg-gradient-to-br from-blue-500 to-purple-600 rounded-full flex items-center justify-center mb-4">
+          <div className="mx-auto w-12 h-12 bg-gradient-to-br from-blue-400 to-purple-600 rounded-full flex items-center justify-center mb-4">
             <Mail className="w-6 h-6 text-white" />
           </div>
-          <CardTitle className="text-2xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+          <CardTitle className="text-2xl font-bold bg-gradient-to-r from-blue-400 to-purple-600 bg-clip-text text-transparent">
             Welcome Back
           </CardTitle>
           <CardDescription className="text-gray-600">
@@ -140,7 +140,7 @@ const Login = () => {
                 <input
                   type="checkbox"
                   id="remember"
-                  className="rounded border-gray-300 text-blue-600 focus:ring-blue-500"
+                  className="rounded border-gray-300 text-blue-400 focus:ring-blue-400"
                 />
                 <Label htmlFor="remember" className="text-sm text-gray-600">
                   Remember me
@@ -148,7 +148,7 @@ const Login = () => {
               </div>
               <Link
                 to="/forgot-password"
-                className="text-sm text-blue-600 hover:text-blue-800 underline"
+                className="text-sm text-blue-400 hover:text-blue-600 underline"
               >
                 Forgot password?
               </Link>
@@ -156,7 +156,7 @@ const Login = () => {
 
             <Button
               type="submit"
-              className="w-full bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white font-medium py-2 px-4 rounded-lg transition-all duration-200 shadow-md hover:shadow-lg transform hover:scale-105"
+              className="w-full bg-gradient-to-r from-blue-400 to-purple-600 hover:from-blue-500 hover:to-purple-700 text-white font-medium py-2 px-4 rounded-lg transition-all duration-200 shadow-md hover:shadow-lg transform hover:scale-105"
               disabled={loading}
             >
               {loading ? (
@@ -178,7 +178,7 @@ const Login = () => {
               Don't have an account?{" "}
               <Link
                 to="/register"
-                className="text-blue-600 hover:text-blue-800 font-medium underline"
+                className="text-blue-400 hover:text-blue-600 font-medium underline"
               >
                 Sign up here
               </Link>

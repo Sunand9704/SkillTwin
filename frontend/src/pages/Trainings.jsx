@@ -1,4 +1,3 @@
-
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
@@ -20,7 +19,7 @@ const Trainings = () => {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-blue-600 to-indigo-800 text-white py-16">
+      <section className="bg-gradient-to-br from-blue-400 to-indigo-600 text-white py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h1 className="text-4xl md:text-5xl font-bold mb-6">Training Programs</h1>
@@ -74,7 +73,7 @@ const Trainings = () => {
                       {program.level}
                     </Badge>
                     <div className="text-right">
-                      <div className="text-2xl font-bold text-blue-600">{program.price}</div>
+                      <div className="text-2xl font-bold text-blue-400">{program.price}</div>
                     </div>
                   </div>
                   <CardTitle className="text-xl mb-2">{program.title}</CardTitle>
@@ -128,7 +127,7 @@ const Trainings = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="text-center">
               <div className="bg-blue-100 p-4 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
-                <Users className="h-8 w-8 text-blue-600" />
+                <Users className="h-8 w-8 text-blue-400" />
               </div>
               <h3 className="text-xl font-semibold mb-3">Expert Instructors</h3>
               <p className="text-gray-600">
@@ -137,7 +136,7 @@ const Trainings = () => {
             </div>
             <div className="text-center">
               <div className="bg-blue-100 p-4 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
-                <Star className="h-8 w-8 text-blue-600" />
+                <Star className="h-8 w-8 text-blue-400" />
               </div>
               <h3 className="text-xl font-semibold mb-3">Hands-on Projects</h3>
               <p className="text-gray-600">
@@ -146,7 +145,7 @@ const Trainings = () => {
             </div>
             <div className="text-center">
               <div className="bg-blue-100 p-4 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
-                <Clock className="h-8 w-8 text-blue-600" />
+                <Clock className="h-8 w-8 text-blue-400" />
               </div>
               <h3 className="text-xl font-semibold mb-3">Flexible Schedule</h3>
               <p className="text-gray-600">
@@ -193,7 +192,7 @@ const Trainings = () => {
                 <CardContent className="pt-6">
                   <div className="flex items-center mb-4">
                     <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mr-3">
-                      <Users className="h-6 w-6 text-blue-600" />
+                      <Users className="h-6 w-6 text-blue-400" />
                     </div>
                     <div>
                       <div className="font-semibold">{story.name}</div>
@@ -210,7 +209,7 @@ const Trainings = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 bg-blue-600 text-white">
+      <section className="py-16 bg-blue-400 text-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
             Ready to Start Your Learning Journey?
@@ -222,7 +221,7 @@ const Trainings = () => {
             <Button size="lg" className="bg-yellow-500 hover:bg-yellow-600 text-black font-semibold">
               Enroll Now
             </Button>
-            <Button size="lg" variant="outline" className="border-white text-white hover:bg-white text-blue-600">
+            <Button size="lg" variant="outline" className="border-white text-white hover:bg-white text-blue-400">
               Schedule a Call
             </Button>
           </div>

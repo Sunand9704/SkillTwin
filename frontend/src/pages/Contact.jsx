@@ -1,4 +1,3 @@
-
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
@@ -59,7 +58,7 @@ const Contact = () => {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-blue-600 to-indigo-800 text-white py-16">
+      <section className="bg-gradient-to-br from-blue-400 to-indigo-600 text-white py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h1 className="text-4xl md:text-5xl font-bold mb-6">Contact Us</h1>
@@ -106,7 +105,7 @@ const Contact = () => {
             <Card className="text-center hover:shadow-lg transition-shadow hover:shadow-2xl transition-shadow hover:scale-105 transition-transform durtion-300 ease-in-out cursor-pointer border-black">
               <CardHeader>
                 <div className="mx-auto bg-blue-100 p-4 rounded-full w-16 h-16 flex items-center justify-center mb-4">
-                  <Send className="h-8 w-8 text-blue-600" />
+                  <Send className="h-8 w-8 text-blue-400" />
                 </div>
                 <CardTitle className="text-xl">Telegram Support</CardTitle>
               </CardHeader>
@@ -115,7 +114,7 @@ const Contact = () => {
                   Join our Telegram channel for updates and quick support from our team.
                 </p>
                 <Button 
-                  className="w-full bg-blue-500 hover:bg-blue-600"
+                  className="w-full bg-blue-400 hover:bg-blue-500"
                   asChild
                 >
                   <a href="https://t.me/skilltwin" target="_blank" rel="noopener noreferrer">
@@ -204,7 +203,7 @@ const Contact = () => {
                         rows={6}
                         value={values.message}
                         onChange={(e) => handleChange('message', e.target.value)}
-                        className={`w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 ${errors.message ? 'border-red-500' : 'border-gray-300'}`}
+                        className={`w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400 ${errors.message ? 'border-red-500' : 'border-gray-300'}`}
                         placeholder="Tell us how we can help you..."
                       />
                       {errors.message && <p className="text-red-500 text-sm">{errors.message}</p>}
@@ -236,7 +235,7 @@ const Contact = () => {
               <div className="space-y-6">
                 <div className="flex items-start space-x-4">
                   <div className="bg-blue-100 p-3 rounded-lg">
-                    <Mail className="h-6 w-6 text-blue-600" />
+                    <Mail className="h-6 w-6 text-blue-400" />
                   </div>
                   <div>
                     <h3 className="font-semibold text-lg mb-1">Email Support</h3>
@@ -247,7 +246,7 @@ const Contact = () => {
 
                 <div className="flex items-start space-x-4">
                   <div className="bg-blue-100 p-3 rounded-lg">
-                    <Phone className="h-6 w-6 text-blue-600" />
+                    <Phone className="h-6 w-6 text-blue-400" />
                   </div>
                   <div>
                     <h3 className="font-semibold text-lg mb-1">Phone Support</h3>
@@ -258,7 +257,7 @@ const Contact = () => {
 
                 <div className="flex items-start space-x-4">
                   <div className="bg-blue-100 p-3 rounded-lg">
-                    <Clock className="h-6 w-6 text-blue-600" />
+                    <Clock className="h-6 w-6 text-blue-400" />
                   </div>
                   <div>
                     <h3 className="font-semibold text-lg mb-1">Business Hours</h3>
@@ -270,7 +269,7 @@ const Contact = () => {
 
                 <div className="flex items-start space-x-4">
                   <div className="bg-blue-100 p-3 rounded-lg">
-                    <MapPin className="h-6 w-6 text-blue-600" />
+                    <MapPin className="h-6 w-6 text-blue-400" />
                   </div>
                   <div>
                     <h3 className="font-semibold text-lg mb-1">Service Area</h3>
@@ -298,7 +297,7 @@ const Contact = () => {
       </section>
 
       {/* Response Time Banner */}
-      <section className="py-12 bg-blue-600 text-white">
+      <section className="py-12 bg-blue-400 text-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-2xl font-bold mb-4">We're Here to Help!</h2>
           <p className="text-lg text-blue-100">

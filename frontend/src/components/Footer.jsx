@@ -86,15 +86,15 @@ const Footer = () => {
             <h3 className="font-semibold text-lg">Contact Info</h3>
             <div className="space-y-3">
               <div className="flex items-center space-x-3">
-                <Mail className="h-4 w-4 text-blue-400" />
+                <Mail className="h-4 w-4 text-blue-300" />
                 <span className="text-gray-300 text-sm">contact@skilltwin.com</span>
               </div>
               <div className="flex items-center space-x-3">
-                <Phone className="h-4 w-4 text-blue-400" />
+                <Phone className="h-4 w-4 text-blue-300" />
                 <span className="text-gray-300 text-sm">+1 (555) 123-4567</span>
               </div>
               <div className="flex items-center space-x-3">
-                <MapPin className="h-4 w-4 text-blue-400" />
+                <MapPin className="h-4 w-4 text-blue-300" />
                 <span className="text-gray-300 text-sm">Remote Support Available</span>
               </div>
             </div>

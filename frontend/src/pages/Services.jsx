@@ -1,4 +1,3 @@
-
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
@@ -40,7 +39,7 @@ const Services = () => {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-blue-600 to-indigo-800 text-white py-16">
+      <section className="bg-gradient-to-br from-blue-400 to-indigo-600 text-white py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h1 className="text-4xl md:text-5xl font-bold mb-6">Our Services</h1>
@@ -62,7 +61,7 @@ const Services = () => {
                   <CardHeader>
                     <div className="flex items-center space-x-3 mb-4">
                       <div className="bg-blue-100 p-3 rounded-lg">
-                        <Icon className="h-6 w-6 text-blue-600" />
+                        <Icon className="h-6 w-6 text-blue-400" />
                       </div>
                       <div>
                         <CardTitle className="text-2xl">{service.title}</CardTitle>
@@ -107,7 +106,7 @@ const Services = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {processSteps.map((step, index) => (
               <div key={index} className="text-center">
-                <div className="bg-blue-600 text-white w-12 h-12 rounded-full flex items-center justify-center text-xl font-bold mx-auto mb-4">
+                <div className="bg-blue-400 text-white w-12 h-12 rounded-full flex items-center justify-center text-xl font-bold mx-auto mb-4">
                   {step.step}
                 </div>
                 <h3 className="text-lg font-semibold mb-3">{step.title}</h3>
@@ -247,7 +246,7 @@ const Services = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 bg-blue-600 text-white">
+      <section className="py-16 bg-blue-400 text-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
             Ready to Transform Your Career?
@@ -259,7 +258,7 @@ const Services = () => {
             <Button size="lg" className="bg-yellow-500 hover:bg-yellow-600 text-black font-semibold" asChild>
               <Link to="/contact">Get Started Now</Link>
             </Button>
-            <Button size="lg" variant="outline" className="border-white text-white hover:bg-white text-blue-600" asChild>
+            <Button size="lg" variant="outline" className="border-white text-white hover:bg-white text-blue-400" asChild>
               <Link to="/trainings">View Training Programs</Link>
             </Button>
           </div>

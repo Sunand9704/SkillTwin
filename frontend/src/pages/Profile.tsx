@@ -108,7 +108,7 @@ const Profile = () => {
       description: "Successfully passed AWS Certified Developer Associate exam",
       date: "1 day ago",
       icon: Award,
-      color: "text-blue-600",
+      color: "text-blue-400",
     },
     {
       id: 3,
@@ -136,7 +136,7 @@ const Profile = () => {
       label: "Courses Completed",
       value: "12",
       icon: BookOpen,
-      color: "text-blue-600",
+      color: "text-blue-400",
     },
     {
       label: "Certifications",

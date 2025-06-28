@@ -55,7 +55,7 @@ const Home = () => {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-blue-600 via-blue-700 to-indigo-800 text-white py-20">
+      <section className="bg-gradient-to-br from-blue-400 via-blue-500 to-indigo-600 text-white py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center space-y-8">
             <h1 className="text-4xl md:text-6xl font-bold leading-tight">
@@ -76,7 +76,7 @@ const Home = () => {
               <Button
                 size="lg"
                 variant="outline"
-                className="border-white text-white hover:bg-white text-blue-600"
+                className="border-white text-white hover:bg-white text-blue-400"
               >
                 View Services
               </Button>
@@ -124,12 +124,10 @@ const Home = () => {
             {benefits.map((benefit, index) => {
               const Icon = iconMap[benefit.icon];
               return (
-
                 <Card key={index} className="border-black text-center hover:shadow-2xl transition-shadow hover:scale-105 transition-transform duration-300 ease-in-out cursor-pointer">
-
                   <CardHeader>
                     <div className="mx-auto bg-blue-100 p-3 rounded-full w-16 h-16 flex items-center justify-center mb-4">
-                      <Icon className="h-8 w-8 text-blue-600" />
+                      <Icon className="h-8 w-8 text-blue-400" />
                     </div>
                     <CardTitle className="text-xl">{benefit.title}</CardTitle>
                   </CardHeader>
@@ -208,7 +206,7 @@ const Home = () => {
                   key={index}
                   onClick={() => setCurrentTestimonial(index)}
                   className={`w-3 h-3 rounded-full transition-colors ${
-                    index === currentTestimonial ? "bg-blue-600" : "bg-gray-300"
+                    index === currentTestimonial ? "bg-blue-400" : "bg-gray-300"
                   }`}
                 />
               ))}
@@ -243,7 +241,7 @@ const Home = () => {
                 <CardTitle className="text-2xl">
                   {pricingPlans[0].name}
                 </CardTitle>
-                <div className="text-4xl font-bold text-blue-600">
+                <div className="text-4xl font-bold text-blue-400">
                   {pricingPlans[0].price}
                   <span className="text-lg text-gray-600">
                     /{pricingPlans[0].period}
@@ -279,7 +277,7 @@ const Home = () => {
                 <CardTitle className="text-2xl">
                   {pricingPlans[1].name}
                 </CardTitle>
-                <div className="text-4xl font-bold text-blue-600">
+                <div className="text-4xl font-bold text-blue-400">
                   {pricingPlans[1].price}
                   <span className="text-lg text-gray-600">
                     /{pricingPlans[1].period}
@@ -317,11 +315,7 @@ const Home = () => {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {trainingPrograms.map((program) => (
-
               <Card key={program.id} className=" text-center hover:shadow-2xl transition-shadow hover:scale-105 transition-transform duration-300 ease-in-out cursor-pointer">
-
-              
-
                 <div className="aspect-video bg-gray-200 rounded-t-lg overflow-hidden">
                   <img
                     src={program.image}
@@ -345,7 +339,7 @@ const Home = () => {
                     </div>
                     <div className="flex justify-between">
                       <span className="text-gray-600">Price:</span>
-                      <span className="font-bold text-blue-600 text-lg">
+                      <span className="font-bold text-blue-400 text-lg">
                         {program.price}
                       </span>
                     </div>
@@ -405,7 +399,7 @@ const Home = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 bg-blue-600 text-white">
+      <section className="py-16 bg-blue-400 text-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
             Ready to Accelerate Your Career?
@@ -424,7 +418,7 @@ const Home = () => {
             <Button
               size="lg"
               variant="outline"
-              className="border-white text-white hover:bg-white text-blue-600"
+              className="border-white text-white hover:bg-white text-blue-400"
             >
               Schedule a Call
             </Button>

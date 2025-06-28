@@ -1,4 +1,3 @@
-
 import { useParams, Link } from 'react-router-dom';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
@@ -75,7 +74,7 @@ const TrainingDetail = () => {
       {/* Back Button */}
       <div className="bg-gray-50 py-4">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <Link to="/trainings" className="inline-flex items-center text-blue-600 hover:text-blue-800">
+          <Link to="/trainings" className="inline-flex items-center text-blue-400 hover:text-blue-600">
             <ArrowLeft className="h-4 w-4 mr-2" />
             Back to Training Programs
           </Link>
@@ -102,7 +101,7 @@ const TrainingDetail = () => {
               
               <div className="grid grid-cols-2 gap-4 mb-6">
                 <div className="flex items-center">
-                  <Clock className="h-5 w-5 text-blue-600 mr-2" />
+                  <Clock className="h-5 w-5 text-blue-400 mr-2" />
                   <span>{program.duration}</span>
                 </div>
                 <div className="flex items-center">
@@ -110,16 +109,16 @@ const TrainingDetail = () => {
                   <span>4.8/5 (120+ reviews)</span>
                 </div>
                 <div className="flex items-center">
-                  <Users className="h-5 w-5 text-blue-600 mr-2" />
+                  <Users className="h-5 w-5 text-blue-400 mr-2" />
                   <span>Small batches (max 15)</span>
                 </div>
                 <div className="flex items-center">
-                  <BookOpen className="h-5 w-5 text-blue-600 mr-2" />
+                  <BookOpen className="h-5 w-5 text-blue-400 mr-2" />
                   <span>Lifetime access</span>
                 </div>
               </div>
 
-              <div className="text-3xl font-bold text-blue-600 mb-6">{program.price}</div>
+              <div className="text-3xl font-bold text-blue-400 mb-6">{program.price}</div>
               
               <div className="mb-6">
                 <h3 className="font-semibold mb-3">Technologies Covered:</h3>
@@ -143,7 +142,7 @@ const TrainingDetail = () => {
               <div className="space-y-4">
                 {program.syllabus.map((topic, index) => (
                   <div key={index} className="flex items-start space-x-3">
-                    <div className="bg-blue-600 text-white w-8 h-8 rounded-full flex items-center justify-center text-sm font-semibold flex-shrink-0 mt-1">
+                    <div className="bg-blue-400 text-white w-8 h-8 rounded-full flex items-center justify-center text-sm font-semibold flex-shrink-0 mt-1">
                       {index + 1}
                     </div>
                     <div>
@@ -237,7 +236,7 @@ const TrainingDetail = () => {
                         rows={3}
                         value={values.message}
                         onChange={(e) => handleChange('message', e.target.value)}
-                        className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                        className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400"
                         placeholder="Any specific goals or questions?"
                       />
                     </div>

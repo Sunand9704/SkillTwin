@@ -1,4 +1,3 @@
-
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Users, Target, Heart, Award, Clock, Shield } from 'lucide-react';
 
@@ -36,7 +35,7 @@ const About = () => {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-blue-600 to-indigo-800 text-white py-16">
+      <section className="bg-gradient-to-br from-blue-400 to-indigo-600 text-white py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h1 className="text-4xl md:text-5xl font-bold mb-6">About SkillTwin</h1>
@@ -54,7 +53,7 @@ const About = () => {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             {stats.map((stat, index) => (
               <div key={index} className="text-center">
-                <div className="text-4xl font-bold text-blue-600 mb-2">{stat.number}</div>
+                <div className="text-4xl font-bold text-blue-400 mb-2">{stat.number}</div>
                 <div className="text-gray-600">{stat.label}</div>
               </div>
             ))}
@@ -104,7 +103,7 @@ const About = () => {
             <Card className="border-black text-center hover:shadow-2xl transition-shadow hover:scale-105 transition-transform duration-300 ease-in-out cursor-pointer">
               <CardHeader>
                 <CardTitle className="text-2xl flex items-center">
-                  <Target className="h-6 w-6 mr-3 text-blue-600" />
+                  <Target className="h-6 w-6 mr-3 text-blue-400" />
                   Our Mission
                 </CardTitle>
               </CardHeader>
@@ -121,7 +120,7 @@ const About = () => {
             <Card className="border-black text-center hover:shadow-2xl transition-shadow hover:scale-105 transition-transform duration-300 ease-in-out cursor-pointer">
               <CardHeader>
                 <CardTitle className="text-2xl flex items-center">
-                  <Heart className="h-6 w-6 mr-3 text-blue-600" />
+                  <Heart className="h-6 w-6 mr-3 text-blue-400" />
                   Our Vision
                 </CardTitle>
               </CardHeader>
@@ -154,7 +153,7 @@ const About = () => {
                 <Card key={index} className="border-black text-center hover:shadow-2xl transition-shadow hover:scale-105 transition-transform duration-300 ease-in-out cursor-pointer">
                   <CardHeader>
                     <div className="mx-auto bg-blue-100 p-3 rounded-full w-16 h-16 flex items-center justify-center mb-4">
-                      <Icon className="h-8 w-8 text-blue-600" />
+                      <Icon className="h-8 w-8 text-blue-400" />
                     </div>
                     <CardTitle className="text-xl">{value.title}</CardTitle>
                   </CardHeader>
@@ -169,7 +168,7 @@ const About = () => {
       </section>
 
       {/* Founder's Note */}
-      <section className="py-16 bg-blue-600 text-white">
+      <section className="py-16 bg-blue-400 text-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h2 className="text-3xl md:text-4xl font-bold mb-8">A Note from Our Founder</h2>
@@ -209,21 +208,21 @@ const About = () => {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="text-center">
-              <Clock className="h-12 w-12 text-blue-600 mx-auto mb-4" />
+              <Clock className="h-12 w-12 text-blue-400 mx-auto mb-4" />
               <h3 className="text-xl font-semibold mb-3">24/7 Support</h3>
               <p className="text-gray-600">
                 Our team is available around the clock to provide assistance when you need it most.
               </p>
             </div>
             <div className="text-center">
-              <Shield className="h-12 w-12 text-blue-600 mx-auto mb-4" />
+              <Shield className="h-12 w-12 text-blue-400 mx-auto mb-4" />
               <h3 className="text-xl font-semibold mb-3">Proven Track Record</h3>
               <p className="text-gray-600">
                 With hundreds of successful placements, our methods are tested and proven effective.
               </p>
             </div>
             <div className="text-center">
-              <Users className="h-12 w-12 text-blue-600 mx-auto mb-4" />
+              <Users className="h-12 w-12 text-blue-400 mx-auto mb-4" />
               <h3 className="text-xl font-semibold mb-3">Expert Team</h3>
               <p className="text-gray-600">
                 Our mentors are industry veterans with decades of combined experience.
